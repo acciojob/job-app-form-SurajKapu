@@ -10,7 +10,7 @@
 	<!-- the entire body must be written by student -->
 	<h1> Job Application Form</h1>
 
-	<form method="post">
+	<form id="form" method="post">
 		<label for="name">Name*</label>
 		<br />
 		<input type="text" id="name" required/>
@@ -22,9 +22,9 @@
 		<br /><br />
 		
 		<label for="gender">Gender*</label>
-		<input id="male" name="gender" type="radio" value="Male" required/>
+		<input id="gender" name="gender" type="radio" value="Male" required/>
 		<label for="male">Male</label> 
-		<input id="female" name="gender" type="radio" value="Female" required/>
+		<input id="gender" name="gender" type="radio" value="Female"/>
 		<label for="female">Female</label>
 		<br /><br />
 		
@@ -36,9 +36,9 @@
 		</select>
 		<br /><br />
 		
-		<label for="age" min="0">Age*</label>
+		<label for="age">Age*</label>
 		<br />
-		<input type="number" id="age" required/>
+		<input type="number" id="age" min="0" required/>
 		<br /><br />
 		
 		<label for="dob">DOB*</label>
@@ -51,7 +51,7 @@
 		<input type="password" id="password" required/>
 		<br /><br />
 		
-		<label>Portfolio*</label>
+		<label for="portfolio">Portfolio*</label>
 		<br />
 		<input type="url" id="portfolio" required/>
 		<br /><br />
